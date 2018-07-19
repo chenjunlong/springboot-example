@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: springboot-example
+  profiles:
+    active: dev
+  http:
+    encoding:
+      charset: utf-8
+      enabled: true
+      force: true
+
+server:
+  port: 8000
+  tomcat:
+    max-threads: 50
+    max-connections: 500
+    max-http-post-size: 409600
+    accesslog:
+      enabled: true
