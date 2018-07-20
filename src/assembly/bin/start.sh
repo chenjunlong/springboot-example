@@ -49,7 +49,7 @@ else
 fi
 
 echo -e "Starting the ${DEPLOY_DIR} ...\c"
-nohup java $JAVA_OPTS $JAVA_MEM_OPTS $JAVA_DEBUG_OPTS $JAVA_JMX_OPTS  -DLOCAL_IP=$LOCAL_IP -classpath $CONF_DIR:$LIB_JARS com.yixia.springboot.example.BootStrapApplication > $STDOUT_FILE 2>&1 &
+nohup java $JAVA_OPTS $JAVA_MEM_OPTS $JAVA_DEBUG_OPTS $JAVA_JMX_OPTS  -DLOCAL_IP=$LOCAL_IP -classpath $CONF_DIR:$LIB_JARS com.chenjunlong.springboot.AnnotationRateLimitBootStrapApplication > $STDOUT_FILE 2>&1 &
 
 echo "$!" > ${PID_FILE};
 

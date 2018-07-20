@@ -1,4 +1,4 @@
-package com.yixia.springboot;
+package com.chenjunlong.springboot;
 
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.alibaba.fastjson.support.config.FastJsonConfig;
@@ -6,7 +6,7 @@ import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter;
 import com.github.jratelimit.annotation.RateLimitComponentScan;
 import com.github.jratelimit.filter.ControllerRateLimitHandler;
 import com.github.jratelimit.filter.ControllerRateLimitInterceptor;
-import com.yixia.springboot.example.ratelimit.CustomRateLimitHandler;
+import com.chenjunlong.springboot.example.ratelimit.CustomRateLimitHandler;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.http.HttpMessageConverters;
@@ -20,8 +20,8 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
  * <p>
  * 通过注解配置扫描包进行限流配置
  */
-@RateLimitComponentScan(basePackages = {"com.yixia.springboot.example"})
-@SpringBootApplication(scanBasePackages = "com.yixia.springboot.example")
+@RateLimitComponentScan(basePackages = {"com.chenjunlong.springboot.example"})
+@SpringBootApplication(scanBasePackages = "com.chenjunlong.springboot.example")
 public class AnnotationRateLimitBootStrapApplication implements WebMvcConfigurer {
 
     @Bean

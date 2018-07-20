@@ -1,4 +1,4 @@
-package com.yixia.springboot.example.ratelimit;
+package com.chenjunlong.springboot.example.ratelimit;
 
 import com.alibaba.fastjson.JSONObject;
 import com.github.jratelimit.filter.ControllerRateLimitHandler;
@@ -17,6 +17,8 @@ public class CustomRateLimitHandler implements ControllerRateLimitHandler {
     public Map<String, Integer> limitConfig() {
         Map<String, Integer> maps = new HashMap<>();
         maps.put("action", 1);
+        maps.put("action2", 1);
+        maps.put("action3", 1);
         return maps;
     }
 

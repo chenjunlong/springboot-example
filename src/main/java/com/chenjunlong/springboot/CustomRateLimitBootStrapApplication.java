@@ -1,4 +1,4 @@
-package com.yixia.springboot;
+package com.chenjunlong.springboot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,7 +9,7 @@ import org.springframework.context.annotation.ImportResource;
  * <p>
  * 通过加载custom-ratelimit.xml中配置的CustomRateLimitHandler进行限流配置的读取
  */
-@SpringBootApplication(scanBasePackages = "com.yixia.springboot.example")
+@SpringBootApplication(scanBasePackages = "com.chenjunlong.springboot.example")
 @ImportResource(locations = {"classpath:/META-INF/custom-ratelimit.xml"})
 public class CustomRateLimitBootStrapApplication {
 

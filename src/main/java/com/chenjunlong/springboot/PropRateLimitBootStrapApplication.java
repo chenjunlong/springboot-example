@@ -1,4 +1,4 @@
-package com.yixia.springboot;
+package com.chenjunlong.springboot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,7 +9,7 @@ import org.springframework.context.annotation.ImportResource;
  * <p>
  * 读取jratelimit.properties获取限流配置
  */
-@SpringBootApplication(scanBasePackages = "com.yixia.springboot.example")
+@SpringBootApplication(scanBasePackages = "com.chenjunlong.springboot.example")
 @ImportResource(locations = {"classpath:/META-INF/prop-ratelimit.xml"})
 public class PropRateLimitBootStrapApplication {
 

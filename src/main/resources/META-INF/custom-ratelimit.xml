@@ -10,9 +10,9 @@
         http://www.springframework.org/schema/mvc
 		http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
-    <ratelimit:annotation-scan base-package="com.yixia.springboot.example.controller"/>
+    <ratelimit:annotation-scan base-package="com.chenjunlong.springboot.example.controller"/>
 
-    <bean id="rateLimitHandler" class="com.yixia.springboot.example.ratelimit.CustomRateLimitHandler"/>
+    <bean id="rateLimitHandler" class="com.chenjunlong.springboot.example.ratelimit.CustomRateLimitHandler"/>
     <mvc:interceptors>
         <mvc:interceptor>
             <mvc:mapping path="/**"/>
